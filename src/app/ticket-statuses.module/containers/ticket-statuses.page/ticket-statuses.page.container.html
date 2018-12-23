@@ -1,0 +1,12 @@
+<pr-sidenav-layout-container>
+  <pr-card>
+    <mat-card-title>
+      {{ "DOCUMENT_TYPES.TITLE" | translate }}
+    </mat-card-title>
+    <pr-ticket-statuses-filter></pr-ticket-statuses-filter>
+      <pr-ticket-statuses-list></pr-ticket-statuses-list>
+    <mat-card-content>
+    </mat-card-content>
+  </pr-card>
+  <pr-entity-add-button (entityAdd)="onEntityAdd()"></pr-entity-add-button>
+</pr-sidenav-layout-container>

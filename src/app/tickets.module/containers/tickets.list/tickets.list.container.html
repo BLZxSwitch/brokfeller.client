@@ -1,0 +1,6 @@
+<pr-tickets-list-item
+  *ngFor="let item of items$ | async; trackBy: trackByFn"
+  [item]="item"
+  (edit)="onEdit(item)"
+  (delete)="onDelete(item.id)">
+</pr-tickets-list-item>

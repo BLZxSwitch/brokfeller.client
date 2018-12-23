@@ -1,0 +1,19 @@
+<mat-card class="mat-typography" (onDrop)="onList1Drop($event)" droppable >
+  <div class="page-header">
+    {{ ticketStatus.name }}
+  </div>
+
+  <pr-dashboard-ticket-list
+    [tickets]="getTickets(ticketStatus.id)"></pr-dashboard-ticket-list>
+  <!--<mat-card-content>-->
+    <!--{{ "DASHBOARD." + translationKey + ".BODY" | translate }}-->
+  <!--</mat-card-content>-->
+
+  <!--<mat-card-actions>-->
+    <!--<button type="button"-->
+            <!--mat-raised-button-->
+            <!--color="accent">-->
+      <!--{{ "DASHBOARD." + translationKey + ".BUTTON_TEXT" | translate }}-->
+    <!--</button>-->
+  <!--</mat-card-actions>-->
+</mat-card>

@@ -1,0 +1,60 @@
+@import "../../../../scss/media";
+@import "../../../../scss/material.theme";
+
+:host {
+  display: block;
+  margin: 8px 0;
+}
+
+.mat-card {
+  border-left: 5px solid mat-color($cloudinventory-app-primary, A100);
+
+  &.is-active {
+    border-left-color: mat-color($cloudinventory-app-accent, 700);
+  }
+
+  .mat-card-content {
+    margin: unset;
+    display: grid;
+    justify-content: stretch;
+
+    @include desktop {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "name amount vat";
+    }
+
+    @include tablet {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "name amount vat";
+    }
+
+    @include mobile {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "name"
+        "amount"
+        "vat";
+    }
+
+    .name {
+      grid-area: name;
+    }
+
+    .amount {
+      grid-area: amount;
+    }
+
+    .vat {
+      grid-area: vat;
+    }
+
+    .is-active {
+      grid-area: is-active;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<pr-ticket-status-edit [type]="type$ | async"
+                       [ticketStatus]="ticketStatus$ | async"
+                       (submitForm)="onSubmit($event)"
+                       (cancel)="onCancel()">
+</pr-ticket-status-edit>

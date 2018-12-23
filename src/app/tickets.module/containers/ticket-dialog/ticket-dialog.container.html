@@ -1,0 +1,5 @@
+<pr-ticket-edit [type]="type$ | async"
+                       [ticket]="ticket$ | async"
+                       (submitForm)="onSubmit($event)"
+                       (cancel)="onCancel()">
+</pr-ticket-edit>

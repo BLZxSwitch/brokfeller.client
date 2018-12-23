@@ -1,0 +1,13 @@
+/deep/ .page {
+  height: calc(100% - 209px) !important;
+}
+
+/deep/ .content{
+  height: 100%;
+}
+
+/deep/ .mat-sidenav-content.mat-drawer-content {
+  & > * {
+    max-width: unset !important;
+  }
+}
